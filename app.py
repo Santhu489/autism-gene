@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from imblearn.over_sampling import RandomOverSampler
 
 # Load the data
-genes = pd.read_csv("drive/MyDrive/Gene/sfari_genes.csv")
+genes = pd.read_csv("D:/sfari_genes.csv")
 
 # Drop unnecessary columns
 columns_to_drop = ['status', 'chromosome', 'number-of-reports', 'gene-name', 'ensembl-id', 'gene-score', 'genetic-category']
@@ -41,7 +41,7 @@ classifiers = {
 }
 
 # Streamlit app
-st.title("Syndromic Gene Predictor")
+st.title("Autism Gene Predictor")
 
 # Sidebar for user input
 gene_symbol = st.sidebar.text_input("Enter a gene symbol:")
