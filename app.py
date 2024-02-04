@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-pip install --upgrade pandas
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.ensemble import RandomForestClassifier
