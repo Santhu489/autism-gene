@@ -7,8 +7,7 @@ from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 from imblearn.over_sampling import RandomOverSampler
 
-# Load the data
-genes = pd.read_csv("D:/sfari_genes.csv")
+genes = pd.read_csv("sfari_genes.csv")
 
 # Drop unnecessary columns
 columns_to_drop = ['status', 'chromosome', 'number-of-reports', 'gene-name', 'ensembl-id', 'gene-score', 'genetic-category']
