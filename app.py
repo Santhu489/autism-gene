@@ -6,8 +6,6 @@ from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
 from imblearn.over_sampling import RandomOverSampler
-# For Windows
-python -m venv venv
 
 genes = pd.read_csv("sfari_genes.csv")
 
